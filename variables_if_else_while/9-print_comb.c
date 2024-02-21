@@ -10,13 +10,16 @@ int main(void)
 {
 	int l;
 
-	for (l = 48; l <= 56; l++)
+	for (l = '0'; l <= '9'; l++)
 	{
 	putchar(l);
-	putchar(44);
-	putchar(32);
+	if (l != '9')
+	{
+	putchar (',');
+	putchar (' ');
+	}
 	}
 
-	putchar(57);
+	putchar('\n');
 	return (0);
 }
