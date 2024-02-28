@@ -11,28 +11,29 @@ void puts_half(char *str)
 	int i;
 	int temp;
 
+	length_of_the_string = 0;
 	while (str[length_of_the_string] != '\0')
 	{
 		length_of_the_string++;
 	}
 
-		if (length_of_the_string % 2 == 0)
+	if (length_of_the_string % 2 == 0)
+	{
+		n = length_of_the_string / 2;
+		for (i = 0; i < n; i++)
 		{
-			n = length_of_the_string / 2;
-			for (i = 0; i < n; i++)
-			{
-				temp = str[n + i];
-				_putchar(temp);
-			}
+			temp = str[n + i];
+			_putchar(temp);
 		}
-		else
+	}
+	else
+	{
+		n = (length_of_the_string - 1) / 2;
+		for (i = 0; i < n; i++)
 		{
-			n = ((length_of_the_string - 1)) / 2;
-			for (i = 0; i < n; i++)
-			{
-				temp = str[n + i + 1];
-				_putchar(temp);
-			}
+			temp = str[n + i + 1];
+			_putchar(temp);
 		}
-		_putchar('\n');
+	}
+	_putchar('\n');
 }
