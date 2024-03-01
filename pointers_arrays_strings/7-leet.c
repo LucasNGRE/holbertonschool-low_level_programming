@@ -12,12 +12,12 @@ char *leet(char *str)
 
 	for (i = 0; str[i]; i++)
 	{
-		for (j = 0; str[j]; j++)
+		for (j = 0; letter[j]; j++)
 		{
 			if (str[i] == letter[j])
 			{
 				str[i] = leet[j];
-				return (str);
+				break;
 			}
 		}
 	}
