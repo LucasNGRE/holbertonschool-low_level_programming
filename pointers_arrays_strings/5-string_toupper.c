@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * string_toupper - Entry point
+ * @str: character to be verified
  * Return:0
  */
 char *string_toupper(char *str)
