@@ -26,7 +26,7 @@ int _atoi(char *s)
 
 			if (result > max_div_10 || (result == max_div_10 && digit > max_mod_10))
 			{
-				return sign == 1 ? INT_MAX : INT_MIN;
+				return (sign == 1 ? INT_MAX : INT_MIN);
 			}
 
 			result = result * 10 + digit;
@@ -38,6 +38,6 @@ int _atoi(char *s)
 		i++;
 	}
 
-	return result * sign;
+	return (result * sign);
 }
 
