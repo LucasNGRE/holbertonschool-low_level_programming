@@ -4,14 +4,12 @@
  * _strpbrk - Entry point
  * @s: character to be verified
  * @accept: character to be verified
- * @c: character to be verified
  * Return:0
  */
 char *_strpbrk(char *s, char *accept)
 {
 	int i;
 	int j;
-	char *c;
 
 	for (i = 0; s[i] >= '\0'; i++)
 	{
@@ -19,8 +17,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == accept [j])
 			{
-				c = &s[i];
-				return (c);
+				return (&s[i]);
 			}
 		}
 	}
