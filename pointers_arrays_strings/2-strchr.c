@@ -1,4 +1,5 @@
 #include "main.h"
+#include "stdio.h"
 /**
  * _strchr - Entry point
  * @s: character to be verified
@@ -17,6 +18,6 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
 
