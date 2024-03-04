@@ -12,6 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int j;
 	unsigned int k;
 	unsigned int somme = 0;
+	k = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
