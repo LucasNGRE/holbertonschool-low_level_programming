@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _memset - Entry point
+ * _memcpy - Entry point
  * @dest: character to be verified
  * @src: character to be verified
  * @n: character to be verified
