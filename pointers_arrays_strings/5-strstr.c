@@ -28,8 +28,13 @@ char *_strstr(char *haystack, char *needle)
 					return (result);
 				}
 			}
+			j = 0;
 		}
-		i++;
+		else
+		{
+			j = 0;
+			i++;
+		}
 	}
 	return (NULL);
 }
