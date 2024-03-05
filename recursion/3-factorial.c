@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _strlen_recursion - Affiche une chaîne
+ * factorial - Affiche une chaîne
  * de caractères suivie d'un saut de ligne.
- * @s: La chaîne de caractères à afficher.
+ * @n: La chaîne de caractères à afficher.
  * Return: The length of the string
  */
 int factorial(int n)
