@@ -3,6 +3,7 @@
  * _strlen_recursion - Affiche une chaîne
  * de caractères suivie d'un saut de ligne.
  * @s: La chaîne de caractères à afficher.
+ * return: 0
  */
 int _strlen_recursion(char *s)
 {
