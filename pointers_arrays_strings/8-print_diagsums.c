@@ -1,8 +1,9 @@
 #include "main.h"
 #include "stdio.h"
 /**
- * print_chessboard - Entry point
+ * print_diagsums - Entry point
  * @a: character to be verified
+ * @size: character to be verified
  * Return:0
  */
 void print_diagsums(int *a, int size)
