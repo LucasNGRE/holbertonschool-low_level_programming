@@ -3,7 +3,7 @@
  * racine - Affiche une chaîne
  * de caractères suivie d'un saut de ligne.
  * @n: La chaîne de caractères à afficher.
- * @n: La chaine de caractère à vérifier.
+ * @i: La chaine de caractère à vérifier.
  * Return: The length of the string
  */
 int racine(int n, int i)
