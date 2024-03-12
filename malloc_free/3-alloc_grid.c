@@ -5,7 +5,7 @@
  * alloc_grid - Créer une fonction qui retourne un pointer vers un tableau.
  * @width: Largeur de du tableau.
  * @height: Hauteur du tableau.
- * Retourne: Un pointeur vers un tableau 2D.
+ * Return: Un pointeur vers un tableau 2D.
  */
 int **alloc_grid(int width, int height)
 {
