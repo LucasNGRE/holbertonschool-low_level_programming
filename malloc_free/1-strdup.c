@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _strdup - Crée un pointeur vers une noiuvelle chaine qui est une copie de str.
- * @str: La chaine a dupliquer.
+ * taille - Crée une fonction pour determiner la taille.
+ * @str: La chaine.
  *
- * Retourne: Un pointeur sur la chaine dupliquée.
+ * Retourne: La taille.
  */
 int taille(char *str)
 {
@@ -18,7 +18,12 @@ int taille(char *str)
           }
 	return (size);
 }
-
+/**
+ * _strdup - Crée un pointeur vers une noiuvelle chaine qui est une copie de str.
+ * @str: La chaine a dupliquer.
+ *
+ * Retourne: Un pointeur sur la chaine dupliquée.
+ */
 char *_strdup(char *str)
 {
 	char *dup;
