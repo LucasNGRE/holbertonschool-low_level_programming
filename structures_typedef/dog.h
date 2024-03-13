@@ -1,6 +1,23 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef DOG_H
+#define DOG_H
 
+/**
+ * struct dog - Structure representing a dog
+ * @name: Name of the dog
+ * @age: Age of the dog
+ * @owner: Owner of the dog
+ *
+ * Description: This structure represents a dog and contains
+ * three members: name, age, and owner.
+ */
+
+typedef struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+}
+dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
