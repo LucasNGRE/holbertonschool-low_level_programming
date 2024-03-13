@@ -2,10 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * str_concat - Créer une fonction qui concatène deux chaines de caractères .
+ * str_concat - Créer une fonction qui concatène
+ * deux chaines de caractères .
  * @s1: La chaine de caractère.
  * @s2: La chaine de caractère.
- * Retourne: Un pointeur sur la chaine dupliquée.
+ * Return: Un pointeur sur la chaine dupliquée.
  */
 char *str_concat(char *s1, char *s2)
 {
