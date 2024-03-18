@@ -2,16 +2,10 @@
 #include "3-calc.h"
 /**
  * main - Entry point of the program.
+ * @argc: Number of arguments passed to the program.
+ * @argv: Array of pointers to strings containing the arguments.
  *
- * This file should contain only the main function.
- *
- * Restrictions:
- * - You are not allowed to code any other function than main in this file.
- * - You are not allowed to directly call op_add, op_sub, op_mul, op_div, or op_mod
- *   from the main function.
- * - You have to use atoi to convert arguments to int.
- * - You are not allowed to use any kind of loop.
- * - You are allowed to use a maximum of 3 if statements.
+ * Return: Always returns 0 to indicate successful completion.
  */
 int main(int argc, char *argv[])
 {
@@ -24,11 +18,11 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 	conv1 = atoi(argv[1]);
 	operator = argv[2];
-	conv2 = atoi (argv[3]);
+	conv2 = atoi(argv[3]);
 
 	if ((strcmp(operator, "/") == 0 || strcmp(operator, "%") == 0) && conv2 == 0)
 	{
