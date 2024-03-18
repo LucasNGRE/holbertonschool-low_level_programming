@@ -1,5 +1,5 @@
-#include "calc.h"
-#include "function_pointer.h"
+#include "3-calc.h"
+#include "function_pointers.h"
 /**
  * get_op_func - Selects the correct function to perform the operation.
  * @s: The operator passed as argument to the program.
@@ -41,13 +41,11 @@ int (*get_op_func(char *s))(int, int)
     };
     int i = 0;
 
-    if (s == NULL)
-	    return (NULL);
     while (ops[i].op != NULL)
     {
-	    s(ops[i].op);
-	    return (strcmp(s, ops[i].op) == 0 ? ops[i].func : NULL);
-	    i++;
+	   if (strcmp(s, ops[i].op) == 0)
+		   return (ops[i].f);
+	   i++;
     }
     return (NULL);
 }
