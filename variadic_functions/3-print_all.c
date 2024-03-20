@@ -23,6 +23,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 	char *s = NULL;
 	const char *ptr;
+	int arg_print = 0;
 
 	va_start(args, format);
 	ptr = format;
@@ -48,7 +49,10 @@ void print_all(const char * const format, ...)
 		}
 		if (*(ptr + 1) != '\0' && (*(ptr + 1) == 'c' || *(ptr + 1) == 'i' ||
 					*(ptr + 1) == 'f' || *(ptr + 1) == 's'))
+		{
 			printf(", ");
+			arg_print++;
+		}
 		ptr++;
 	}
 	va_end(args);
