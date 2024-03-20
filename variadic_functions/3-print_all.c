@@ -22,8 +22,8 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	char *str;
-	int i = 0;
-	int is_format_char = 0;
+	unsigned int i = 0;
+	unsigned int is_format_char = 0;
 
 	va_start(args, format);
 
